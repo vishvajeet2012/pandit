@@ -4,14 +4,18 @@
  * here and every generated icon (browser tab, Apple touch icon) follows.
  */
 export const site = {
-  name: "AETHERIS",
+  name: "VISH",
+
+  /** Which opening the landing page uses: one still, or the four-chapter carousel. */
+  hero: "carousel" as "still" | "carousel",
+
   email: "letters@aetheris.in",
   city: "Jaipur",
   url: "https://aetheris.in",
 
   favicon: {
     /** Drawn into the icon. Keep it to one or two Latin letters. */
-    glyph: "A",
+    glyph: "V",
     background: "#1F252E",
     foreground: "#C5A46E",
     /** 0 = square, 0.5 = circle. */

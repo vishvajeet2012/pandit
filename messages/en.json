@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "AETHERIS — Acharya Rishi Devansh",
+    "title": "VISH — Acharya Rishi Devansh",
     "description": "Private Vedic counsel for those who already have everything — except stillness. Jaipur."
   },
   "nav": {
@@ -9,9 +9,14 @@
     "sanctum": "Sanctum",
     "journal": "Journal",
     "book": "Book Consultation",
-    "home": "AETHERIS — home",
+    "home": "VISH — home",
     "language": "Language",
     "kundli": "Free kundli"
+  },
+  "enter": {
+    "tagline": "Private Vedic Counsel · Jaipur",
+    "line": "Drawing the chart",
+    "skip": "Enter"
   },
   "chapters": {
     "hero": "Hero",
@@ -42,6 +47,46 @@
     "film": "Watch the film →",
     "deva": "सत्यं ज्ञानम् अनन्तं ब्रह्म",
     "portraitAlt": "Acharya Rishi Devansh, photographed in window light, Jaipur"
+  },
+  "hero2": {
+    "cta": "Schedule Consultation",
+    "film": "Watch the film →",
+    "prev": "Previous",
+    "next": "Next",
+    "slides": [
+      {
+        "eyebrow": "01 — Griha Anushthan & Puja",
+        "line1": "Shree Satyanarayan",
+        "accent": "Katha &",
+        "line2": "Sacred Havan.",
+        "sub": "Traditional Vedic puja and havan conducted at your home with pure rituals, mantras, and devotion.",
+        "alt": "Pandit ji performing Satyanarayan Puja and Havan at home"
+      },
+      {
+        "eyebrow": "02 — Janma Kundli Reading",
+        "line1": "Timeless",
+        "accent": "Wisdom,",
+        "line2": "Modern Clarity.",
+        "sub": "Private Vedic horoscope reading — a detailed sitting with the sky you were born under.",
+        "alt": "Acharya Rishi Devansh analyzing a hand-drawn Janma Kundli birth chart"
+      },
+      {
+        "eyebrow": "03 — The Sanctum",
+        "line1": "A space of",
+        "accent": "sacred stillness",
+        "line2": "& peace.",
+        "sub": "Jaipur sanctum — pure Vedic atmosphere, burning brass diyas, and authentic spiritual presence.",
+        "alt": "Private Vedic sanctum with stone jali and glowing brass lamps"
+      },
+      {
+        "eyebrow": "04 — Sacred Parampara",
+        "line1": "Rooted in",
+        "accent": "ancient shastras,",
+        "line2": "preserved in lineage.",
+        "sub": "Decades of Vedic scholarship with authentic palm-leaf manuscripts and planetary wisdom.",
+        "alt": "Ancient Sanskrit manuscripts and Vedic palm-leaf astrology charts"
+      }
+    ]
   },
   "press": {
     "featured": "Featured in",
@@ -441,7 +486,7 @@
       },
       {
         "y": "2026",
-        "t": "AETHERIS — the work given a name, not a brand."
+        "t": "VISH — the work given a name, not a brand."
       }
     ]
   },
@@ -449,7 +494,7 @@
     "eyebrow": "09 — For whom",
     "line1": "This is not for everyone.",
     "line2": "That is the point.",
-    "forTitle": "AETHERIS is for",
+    "forTitle": "VISH is for",
     "notForTitle": "It is not for",
     "for": [
       "Founders and patrons who need timing, not motivation.",

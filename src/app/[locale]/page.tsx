@@ -1,9 +1,10 @@
 import { setRequestLocale } from "next-intl/server";
 
 import ChapterTicks from "@/components/site/ChapterTicks";
+import { site } from "@/config/site";
 
 import Hero from "@/components/acts/Hero";
-import PressBand from "@/components/acts/PressBand";
+import HeroCarousel from "@/components/acts/HeroCarousel";
 import TheMan from "@/components/acts/TheMan";
 import SignatureWork from "@/components/acts/SignatureWork";
 import Panchang from "@/components/acts/Panchang";
@@ -31,12 +32,11 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
       <ChapterTicks />
 
       <main className="flex-1">
-        <Hero />
-        <PressBand />
+        {site.hero === "carousel" ? <HeroCarousel /> : <Hero />}
         <TheMan />
         <SignatureWork />
         <Panchang locale={locale} />
-        <Ritual />
+        {/* <Ritual /> */}
         <WhatIsRead />
         <Houses />
         <Sanctum />

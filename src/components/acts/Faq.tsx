@@ -42,24 +42,40 @@ export default function Faq() {
         {items.map((item, i) => {
           const on = open === i;
           return (
-            <div key={item.q} className="faq-row border-b border-rule">
+            <div
+              key={item.q}
+              className="faq-row group border-b border-rule transition-colors duration-500"
+            >
               <button
                 type="button"
                 onClick={() => setOpen(on ? null : i)}
                 aria-expanded={on}
                 className="flex w-full items-baseline gap-8 py-8 text-left"
               >
-                <span className="smallcaps shrink-0 text-gold">
+                <span
+                  className={`smallcaps shrink-0 transition-colors duration-500 ${
+                    on ? "text-gold" : "text-muted group-hover:text-gold"
+                  }`}
+                >
                   {String(i + 1).padStart(2, "0")}
                 </span>
-                <span className="display flex-1 text-[clamp(19px,1.8vw,25px)] leading-[1.25]">
+                <span
+                  className={`display flex-1 text-[clamp(19px,1.8vw,25px)] leading-[1.25] transition-colors duration-500 ${
+                    on ? "text-ink" : "text-ink/80 group-hover:text-ink"
+                  }`}
+                >
                   {item.q}
                 </span>
                 <span
                   aria-hidden
-                  className="mt-2 block h-px w-4 shrink-0 bg-ink transition-transform duration-500"
-                  style={{ transform: on ? "rotate(0deg)" : "rotate(90deg)" }}
-                />
+                  className="relative mt-2 block h-4 w-4 shrink-0"
+                >
+                  <span className="absolute left-0 top-1/2 h-px w-4 -translate-y-1/2 bg-ink" />
+                  <span
+                    className="absolute left-0 top-1/2 h-px w-4 -translate-y-1/2 bg-ink transition-transform duration-500 ease-[cubic-bezier(.22,1,.36,1)]"
+                    style={{ transform: on ? "rotate(0deg)" : "rotate(90deg)" }}
+                  />
+                </span>
               </button>
               <div
                 className="grid transition-[grid-template-rows,opacity] duration-700 ease-[cubic-bezier(.22,1,.36,1)]"

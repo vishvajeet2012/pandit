@@ -2,7 +2,7 @@
 
 The private Vedic practice of Acharya Rishi Devansh — a single, scroll-driven landing page built as a digital atelier rather than a SaaS page.
 
-Next.js 16.3 (App Router, Turbopack) · React 19 · Tailwind CSS v4 · GSAP + ScrollTrigger · Lenis · next-intl.
+Next.js 16.3 (App Router, Turbopack) · React 19 · Tailwind CSS v4 · GSAP + ScrollTrigger · Lenis · next-intl. No web fonts — the type is whatever the reader’s system already has.
 
 ```bash
 npm run dev     # http://localhost:3000 → redirects to /en
@@ -17,7 +17,7 @@ English is the default and every URL carries its locale: `/en`, `/hi`. `/` redir
 - Copy lives in [messages/en.json](messages/en.json) and [messages/hi.json](messages/hi.json) — one namespace per act. Nothing user-facing is hard-coded in a component.
 - Routing config: [src/i18n/routing.ts](src/i18n/routing.ts). Add a locale there, add the matching `messages/<locale>.json`, and the nav switcher picks it up.
 - The locale switcher in the nav keeps the current path, so `/hi` ↔ `/en` never loses the reader's place.
-- Hindi gets its own faces — Noto Serif Devanagari for display, Noto Sans Devanagari for body — with looser leading and no italics (Devanagari has none). Those rules live under `html[lang="hi"]` in [src/app/globals.css](src/app/globals.css).
+- Hindi gets the system Devanagari faces (`Nirmala UI`, `Sanskrit Text`, falling back to Noto if installed), with looser leading and no italics — Devanagari has none. Those rules live under `html[lang="hi"]` in [src/app/globals.css](src/app/globals.css).
 
 ## Favicon
 
@@ -41,6 +41,8 @@ Tokens are defined once, in `@theme` in [src/app/globals.css](src/app/globals.cs
 | `muted` | `#5C6675` | body copy |
 | `gold` | `#C5A46E` | gold leaf — wordmark, one italic word per act, rules, one button |
 | `rule` | `#E8DFD0` | hairlines |
+
+Type is system-only: `--font-display` resolves to `ui-serif, Georgia, "Times New Roman", serif` and `--font-sans` to `ui-sans-serif, system-ui, …`. Nothing is downloaded, so there is no font flash and no third-party request. Swap those two tokens if you ever want a licensed face.
 
 Editorial primitives (`.display`, `.eyebrow`, `.smallcaps`, `.body-muted`, `.gold-link`, `.deva`, `.act`) sit in `@layer components`, so any Tailwind utility still overrides them inline.
 

@@ -56,11 +56,12 @@ export default function SriYantra({
     const ctx = gsap.context(() => {
       if (play) {
         gsap.set(strokes, { strokeDasharray: 1, strokeDashoffset: 1 });
+        // grows from the bindu outward: the last shapes in the file are the innermost
         gsap.to(strokes, {
           strokeDashoffset: 0,
           ease: "power1.inOut",
-          duration: play * 0.6,
-          stagger: (play * 0.4) / strokes.length,
+          duration: play * 0.5,
+          stagger: { each: (play * 0.5) / strokes.length, from: "end" },
         });
         return;
       }

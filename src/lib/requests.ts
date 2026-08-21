@@ -44,7 +44,7 @@ async function emailRequest(request: ConsultationRequest) {
   if (!key) return;
 
   const to = process.env.CONSULTATION_INBOX ?? site.email;
-  const from = process.env.CONSULTATION_FROM ?? "AETHERIS <onboarding@resend.dev>";
+  const from = process.env.CONSULTATION_FROM ?? "VISH <onboarding@resend.dev>";
 
   const lines = [
     `Name:      ${request.name}`,

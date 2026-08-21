@@ -20,6 +20,7 @@ export default function Nav() {
   const pathname = usePathname();
   const active = useActiveChapter();
   const [lifted, setLifted] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const onHome = pathname === "/";
 
   useEffect(() => {
@@ -29,19 +30,28 @@ export default function Nav() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [pathname]);
+
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [menuOpen]);
+
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-[90] transition-colors duration-700 ${
-        lifted || !onHome ? "bg-canvas/80 backdrop-blur-[6px]" : "bg-transparent"
-      }`}
+      className="fixed inset-x-0 top-0 z-[90] bg-white shadow-[0_2px_16px_rgba(0,0,0,0.04)]"
     >
-      <div className="flex h-[76px] items-center justify-between px-[clamp(24px,7.2vw,140px)]">
+      <div className="flex h-[68px] items-center justify-between px-6 sm:px-[clamp(24px,7.2vw,140px)] lg:h-[76px]">
         <Link
           href="/"
-          className="font-display text-[18px] tracking-[0.34em] text-gold"
+          className="font-display text-[16px] tracking-[0.34em] text-gold sm:text-[18px]"
           aria-label={t("home")}
         >
-          AETHERIS
+          VISH
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">
@@ -67,7 +77,7 @@ export default function Nav() {
           })}
         </nav>
 
-        <div className="flex items-center gap-6">
+        <div className="hidden items-center gap-6 lg:flex">
           <MagneticButton
             href="/book"
             localized
@@ -77,18 +87,79 @@ export default function Nav() {
           </MagneticButton>
           <LocaleSwitch label={t("language")} />
         </div>
+
+        <button
+          type="button"
+          onClick={() => setMenuOpen((v) => !v)}
+          aria-expanded={menuOpen}
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
+          className="relative flex h-10 w-10 items-center justify-center lg:hidden"
+        >
+          <span className="relative block h-4 w-5">
+            <span
+              className="absolute left-0 top-0 h-px w-5 bg-ink transition-transform duration-300 ease-[cubic-bezier(.22,1,.36,1)]"
+              style={{
+                transform: menuOpen ? "translateY(7.5px) rotate(45deg)" : "translateY(0) rotate(0deg)",
+              }}
+            />
+            <span
+              className="absolute left-0 bottom-0 h-px w-5 bg-ink transition-transform duration-300 ease-[cubic-bezier(.22,1,.36,1)]"
+              style={{
+                transform: menuOpen ? "translateY(-7.5px) rotate(-45deg)" : "translateY(0) rotate(0deg)",
+              }}
+            />
+          </span>
+        </button>
       </div>
       <div className="h-px w-full bg-rule/60" />
+
+      <div
+        className="grid overflow-hidden bg-white transition-[grid-template-rows] duration-500 ease-[cubic-bezier(.22,1,.36,1)] lg:hidden"
+        style={{ gridTemplateRows: menuOpen ? "1fr" : "0fr" }}
+      >
+        <div className="overflow-hidden">
+          <nav className="flex flex-col gap-1 px-6 pb-8 pt-4">
+            {LINKS.map((l) => {
+              const on = l.href.startsWith("/#")
+                ? onHome && active === l.id
+                : pathname.startsWith(l.href);
+              return (
+                <Link
+                  key={l.id}
+                  href={l.href}
+                  className={`border-b border-rule/60 py-4 text-[15px] tracking-[0.04em] transition-colors duration-500 ${
+                    on ? "text-gold" : "text-ink"
+                  }`}
+                >
+                  {t(l.id)}
+                </Link>
+              );
+            })}
+
+            <MagneticButton
+              href="/book"
+              localized
+              className="mt-6 flex h-12 items-center justify-center rounded-full bg-gold px-7 text-[12px] font-medium tracking-[0.08em] text-ink"
+            >
+              {t("book")}
+            </MagneticButton>
+
+            <div className="mt-6 flex items-center gap-3">
+              <LocaleSwitch label={t("language")} className="flex" />
+            </div>
+          </nav>
+        </div>
+      </div>
     </header>
   );
 }
 
-function LocaleSwitch({ label }: { label: string }) {
+function LocaleSwitch({ label, className }: { label: string; className?: string }) {
   const locale = useLocale() as Locale;
   const pathname = usePathname();
 
   return (
-    <div className="hidden items-center gap-2 sm:flex" aria-label={label}>
+    <div className={className ?? "hidden items-center gap-2 sm:flex"} aria-label={label}>
       {routing.locales.map((l, i) => (
         <span key={l} className="flex items-center gap-2">
           {i > 0 && <span className="h-[3px] w-[3px] rounded-full bg-rule" />}

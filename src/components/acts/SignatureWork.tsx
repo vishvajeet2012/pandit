@@ -2,8 +2,18 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { gsap, ScrollTrigger } from "@/lib/gsap";
+
+const CARD_IMAGES = [
+  "/work/janma-kundli.jpg",
+  "/work/graha-shanti.jpg",
+  "/work/career-direction.jpg",
+  "/work/annual-forecast.jpg",
+  "/work/muhurta.jpg",
+  "/work/kundli-milan.jpg",
+];
 
 type Work = { n: string; title: string; body: string; deva: string };
 
@@ -97,6 +107,19 @@ export default function SignatureWork() {
                     on ? "border border-gold opacity-100" : "border border-rule/60 opacity-70"
                   }`}
                 >
+                  {/* card background image */}
+                  <div className="pointer-events-none absolute inset-0 overflow-hidden">
+                    <Image
+                      src={CARD_IMAGES[i] || CARD_IMAGES[0]}
+                      alt={w.title}
+                      fill
+                      className="object-cover transition-opacity duration-700"
+                      style={{ opacity: on ? 1 : 0.6 }}
+                      sizes="(max-width: 768px) 72vw, 560px"
+                    />
+                    <div className="absolute inset-0" style={{ background: "linear-gradient(to right, white 30%, rgba(255,255,255,0.5) 55%, transparent 75%)" }} />
+                  </div>
+
                   <span
                     className="display pointer-events-none absolute -bottom-10 right-6 select-none text-[280px] leading-none text-gold"
                     style={{ opacity: on ? 0.08 : 0.03 }}
@@ -114,7 +137,7 @@ export default function SignatureWork() {
                   </div>
 
                   <div className="relative flex items-end justify-between">
-                    <Link href={`/offerings/${slugs[i]}`} className="gold-link">
+                    <Link href={`/offerings/${slugs[i]}`} className="gold-link text-[18px] font-semibold">
                       {t("cta")}
                     </Link>
                     <span className="deva">{w.deva}</span>

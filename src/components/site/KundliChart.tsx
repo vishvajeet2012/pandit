@@ -97,7 +97,7 @@ export default function KundliChart({ className = "", lagna = 1, labels, houses,
               textAnchor="middle"
               dominantBaseline="middle"
               fontSize={content ? 7 : 9}
-              fontFamily="var(--font-inter), sans-serif"
+              fontFamily="var(--font-sans)"
               letterSpacing="0.12em"
               fill={content ? "#c5a46e" : on ? "#1f252e" : "#5c6675"}
               opacity={content ? 0.9 : on ? 1 : 0.55}
@@ -113,7 +113,7 @@ export default function KundliChart({ className = "", lagna = 1, labels, houses,
                 textAnchor="middle"
                 dominantBaseline="middle"
                 fontSize="7.5"
-                fontFamily="var(--font-inter), sans-serif"
+                fontFamily="var(--font-sans)"
                 letterSpacing="0.04em"
                 fill="#1f252e"
               >

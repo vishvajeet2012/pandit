@@ -42,3 +42,6 @@ next-env.d.ts
 
 # consultation requests written by the booking form
 /.data/
+
+# keep the sample, ignore the real ones
+!.env.example

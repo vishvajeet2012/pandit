@@ -13,24 +13,48 @@ export default function Hero() {
   const portrait = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    let stop = () => {};
+
     const ctx = gsap.context(() => {
-      gsap.fromTo(
-        ".hero-line > span",
-        { yPercent: 112 },
-        { yPercent: 0, duration: 1.5, ease: "power3.out", stagger: 0.09, delay: 0.15 }
-      );
-      gsap.fromTo(
-        ".hero-fade",
-        { autoAlpha: 0, y: 18 },
-        { autoAlpha: 1, y: 0, duration: 1.2, ease: "power2.out", stagger: 0.12, delay: 0.9 }
-      );
+      // held out of sight until the door lifts
+      gsap.set(".hero-line > span", { yPercent: 112 });
+      gsap.set(".hero-fade", { autoAlpha: 0, y: 18 });
+
+      const intro = () => {
+        gsap.to(".hero-line > span", {
+          yPercent: 0,
+          duration: 1.5,
+          ease: "power3.out",
+          stagger: 0.09,
+        });
+        gsap.to(".hero-fade", {
+          autoAlpha: 1,
+          y: 0,
+          duration: 1.2,
+          ease: "power2.out",
+          stagger: 0.12,
+          delay: 0.45,
+        });
+      };
+
+      if (document.documentElement.dataset.entering) {
+        window.addEventListener("aetheris:entered", intro, { once: true });
+        stop = () => window.removeEventListener("aetheris:entered", intro);
+      } else {
+        gsap.delayedCall(0.15, intro);
+      }
+
       gsap.to(portrait.current, {
         yPercent: 8,
         ease: "none",
         scrollTrigger: { trigger: root.current, start: "top top", end: "bottom top", scrub: true },
       });
     }, root);
-    return () => ctx.revert();
+
+    return () => {
+      stop();
+      ctx.revert();
+    };
   }, []);
 
   return (
