@@ -1,0 +1,223 @@
+@import "tailwindcss";
+
+@theme {
+  --color-canvas: #f7f3eb;
+  --color-surface: #ffffff;
+  --color-ink: #1f252e;
+  --color-muted: #5c6675;
+  --color-gold: #c5a46e;
+  --color-rule: #e8dfd0;
+
+  --font-display: var(--font-playfair), Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  background: var(--color-canvas);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: 17px;
+  line-height: 1.7;
+  overflow-x: clip;
+}
+
+/* Hindi carries its own faces: a Devanagari serif for display, sans for body. */
+html[lang="hi"] .display {
+  font-family: var(--font-deva-serif), Georgia, serif;
+  letter-spacing: 0;
+  /* Devanagari needs room above the shirorekha and below the matras. */
+  line-height: 1.14;
+}
+
+html[lang="hi"] h1.display {
+  font-size: clamp(40px, 6.6vw, 112px);
+}
+
+html[lang="hi"] .reveal-line {
+  padding: 0.16em 0 0.22em;
+  margin: -0.16em 0 -0.22em;
+}
+
+html[lang="hi"] body,
+html[lang="hi"] .body-muted,
+html[lang="hi"] .smallcaps,
+html[lang="hi"] .eyebrow,
+html[lang="hi"] .gold-link {
+  font-family: var(--font-deva), var(--font-inter), sans-serif;
+}
+
+html[lang="hi"] .display .italic-gold {
+  font-family: inherit;
+}
+
+/* Devanagari has no italic — the accent word stays upright, only gold. */
+html[lang="hi"] .italic-gold,
+html[lang="hi"] .display em,
+html[lang="hi"] .italic {
+  font-style: normal;
+}
+
+html[lang="hi"] .eyebrow,
+html[lang="hi"] .smallcaps {
+  font-variant: normal;
+  text-transform: none;
+  letter-spacing: 0.1em;
+}
+
+::selection {
+  background: #c5a46e33;
+  color: var(--color-ink);
+}
+
+/* Lenis */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/* Custom cursor — hide the native one only on real pointers */
+@media (pointer: fine) {
+  html.cursor-ready,
+  html.cursor-ready * {
+    cursor: none !important;
+  }
+}
+
+/* ——— editorial primitives ——— */
+@layer components {
+
+  .eyebrow {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    line-height: 1;
+    font-weight: 500;
+    font-variant: small-caps;
+    text-transform: lowercase;
+    letter-spacing: 0.18em;
+    color: var(--color-gold);
+  }
+
+  .eyebrow-muted {
+    color: var(--color-muted);
+  }
+
+  .smallcaps {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    font-variant: small-caps;
+    text-transform: lowercase;
+    letter-spacing: 0.18em;
+    line-height: 1.4;
+  }
+
+  .display {
+    font-family: var(--font-display);
+    font-weight: 400;
+    line-height: 0.9;
+    letter-spacing: -0.015em;
+  }
+
+  .italic-gold {
+    font-style: italic;
+    color: var(--color-gold);
+  }
+
+  .deva {
+    font-family: var(--font-deva);
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: #b9a888;
+    font-weight: 300;
+  }
+
+  .body-muted {
+    color: var(--color-muted);
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  .hairline {
+    height: 1px;
+    background: var(--color-rule);
+    border: 0;
+  }
+
+  .gold-link {
+    font-family: var(--font-sans);
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: var(--color-gold);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #c5a46e59;
+    transition: border-color 0.4s ease, gap 0.4s ease;
+  }
+  .gold-link:hover {
+    border-color: var(--color-gold);
+    gap: 0.85rem;
+  }
+
+  .act {
+    position: relative;
+    padding-left: clamp(24px, 7.2vw, 140px);
+    padding-right: clamp(24px, 7.2vw, 140px);
+  }
+
+  .act-y {
+    padding-top: clamp(96px, 11vw, 190px);
+    padding-bottom: clamp(96px, 11vw, 190px);
+  }
+
+  /* warm temperature "shadow" — never a grey blob */
+  .warm-lift {
+    box-shadow: 0 30px 80px -60px rgba(120, 92, 48, 0.45);
+  }
+
+  /* textures */
+  .tex-palm {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9 0.012' numOctaves='3'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23f)' opacity='0.35'/%3E%3C/svg%3E");
+    background-size: 240px 240px;
+    opacity: 0.03;
+  }
+
+  .grain {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-size: 160px 160px;
+  }
+
+  /* type reveal — a line still rising into its baseline */
+  .reveal-line {
+    display: block;
+    overflow: hidden;
+    padding-bottom: 0.14em;
+    margin-bottom: -0.14em;
+  }
+  .reveal-line > span {
+    display: block;
+    will-change: transform;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-line > span {
+    transform: none !important;
+  }
+}

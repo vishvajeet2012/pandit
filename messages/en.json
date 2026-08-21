@@ -1,0 +1,806 @@
+{
+  "meta": {
+    "title": "AETHERIS — Acharya Rishi Devansh",
+    "description": "Private Vedic counsel for those who already have everything — except stillness. Jaipur."
+  },
+  "nav": {
+    "about": "About",
+    "offerings": "Offerings",
+    "sanctum": "Sanctum",
+    "journal": "Journal",
+    "book": "Book Consultation",
+    "home": "AETHERIS — home",
+    "language": "Language",
+    "kundli": "Free kundli"
+  },
+  "chapters": {
+    "hero": "Hero",
+    "press": "Featured",
+    "about": "The Acharya",
+    "offerings": "Signature Work",
+    "panchang": "Panchang",
+    "ritual": "The Ritual",
+    "reading": "What is read",
+    "houses": "The twelve houses",
+    "sanctum": "The Sanctum",
+    "parampara": "Parampara",
+    "forwhom": "For Whom",
+    "sitting": "Ninety Minutes",
+    "voices": "In Confidence",
+    "journal": "Insights",
+    "faq": "Asked often",
+    "close": "Clarity"
+  },
+  "hero": {
+    "eyebrow": "Private Vedic Counsel · Jaipur",
+    "line1": "Timeless",
+    "line2": "Wisdom.",
+    "line3": "Modern",
+    "line4": "Clarity.",
+    "sub": "Private Vedic counsel for those who already have everything — except stillness.",
+    "cta": "Schedule Consultation",
+    "film": "Watch the film →",
+    "deva": "सत्यं ज्ञानम् अनन्तं ब्रह्म",
+    "portraitAlt": "Acharya Rishi Devansh, photographed in window light, Jaipur"
+  },
+  "press": {
+    "featured": "Featured in",
+    "outlets": [
+      "Vogue India",
+      "Forbes",
+      "The Economic Times",
+      "Architectural Digest",
+      "The Indian Quarterly"
+    ]
+  },
+  "man": {
+    "eyebrow": "01 — The Acharya",
+    "nameLead": "Acharya Rishi",
+    "nameAccent": "Devansh",
+    "p1": "Twenty-three years of private counsel. He does not perform. He reads.",
+    "p2": "Lineage held in silence rather than spectacle. Jaipur, not a stage.",
+    "p3": "Clients are founders, patrons, families who require discretion more than theatre.",
+    "p4": "He works from the Parashari method — sidereal longitudes, the Vimshottari dasha, and the divisional charts — corrected by hand, never by an app’s default settings.",
+    "link": "Read the full journey →",
+    "deva": "आचार्य ऋषि देवांश",
+    "imageAlt": "Hands at rest on a teak table beside a handwritten natal chart",
+    "signatureAlt": "Signature of Acharya Rishi Devansh"
+  },
+  "work": {
+    "eyebrow": "02 — Signature Work",
+    "titleLead": "The",
+    "titleAccent": "readings",
+    "titleTail": "he still takes.",
+    "cta": "Explore the reading →",
+    "items": [
+      {
+        "n": "01",
+        "title": "Janma Kundli — Deep Reading",
+        "body": "A first chart is not a printout. It is a sitting with the sky you were born under.",
+        "deva": "जन्म कुण्डली"
+      },
+      {
+        "n": "02",
+        "title": "Graha Shanti & Relationship",
+        "body": "Where two charts meet — marriage, estrangement, the quiet work of repair.",
+        "deva": "ग्रह शान्ति"
+      },
+      {
+        "n": "03",
+        "title": "Career & Life Direction",
+        "body": "Timing, vocation, the years that must not be wasted.",
+        "deva": "कर्म दिशा"
+      },
+      {
+        "n": "04",
+        "title": "Annual Forecast & Remedies",
+        "body": "The year ahead, named plainly, with remedies that can actually be lived.",
+        "deva": "वर्ष फल"
+      },
+      {
+        "n": "05",
+        "title": "Muhurta — Choosing the Hour",
+        "body": "A signing, a foundation, a first journey. When to begin, and when to wait.",
+        "deva": "मुहूर्त"
+      },
+      {
+        "n": "06",
+        "title": "Kundli Milan — Two Families",
+        "body": "Beyond the count of gunas: temperament, longevity, and what a household will ask of both.",
+        "deva": "कुण्डली मिलान"
+      }
+    ],
+    "slugs": [
+      "janma-kundli",
+      "graha-shanti",
+      "career-direction",
+      "annual-forecast",
+      "muhurta",
+      "kundli-milan"
+    ],
+    "backToOfferings": "← All offerings",
+    "durationLabel": "Length",
+    "prepLabel": "Bring",
+    "feeLabel": "Fee",
+    "feeValue": "On request",
+    "details": [
+      {
+        "lede": "The first sitting. Ninety minutes with the chart you were born under, read once, carefully, in front of you.",
+        "duration": "90 minutes, in Jaipur or by private video",
+        "prep": "Date, exact time and place of birth",
+        "sections": [
+          {
+            "h": "What is read",
+            "body": "The lagna and its lord. The Moon, its nakshatra and its pada. The mahadasha you are inside and the one that follows it. Saturn and Jupiter over the next eighteen months."
+          },
+          {
+            "h": "What you leave with",
+            "body": "A handwritten page: the three or four things that are structurally true of the chart, the years that carry weight, and one practice to keep."
+          },
+          {
+            "h": "What it is not",
+            "body": "A dated forecast you did not ask for. A list of stones. A subscription."
+          }
+        ]
+      },
+      {
+        "lede": "Two charts on the same table — a marriage, an estrangement, a household that has gone quiet.",
+        "duration": "120 minutes, both people present where possible",
+        "prep": "Birth details for both, and the question you have not asked aloud",
+        "sections": [
+          {
+            "h": "What is read",
+            "body": "Each chart on its own first — temperament, the seventh house, its lord, Venus and Mars. Only then the two together: what each one asks of the other, and where the friction is structural rather than personal."
+          },
+          {
+            "h": "What you leave with",
+            "body": "A plain account of what the two charts make easy and what they make expensive. Where remedies apply, one for each person."
+          },
+          {
+            "h": "What it is not",
+            "body": "A guna score. A verdict on whether to marry. Permission."
+          }
+        ]
+      },
+      {
+        "lede": "Timing, vocation, and the years that must not be wasted.",
+        "duration": "90 minutes",
+        "prep": "Birth details, and the decision in front of you",
+        "sections": [
+          {
+            "h": "What is read",
+            "body": "The tenth house and its lord, the dashamsha, the dasha sequence for the next decade, and the transits that open and close a window."
+          },
+          {
+            "h": "What you leave with",
+            "body": "The two or three years that are worth spending, the ones to hold, and what the chart says you are actually built to do."
+          },
+          {
+            "h": "What it is not",
+            "body": "Career counselling. A guarantee of a title, a round, or an exit."
+          }
+        ]
+      },
+      {
+        "lede": "The year ahead, named plainly, with remedies that can be lived.",
+        "duration": "75 minutes, usually near a birthday",
+        "prep": "Birth details, and last year's page if you have it",
+        "sections": [
+          {
+            "h": "What is read",
+            "body": "The running dasha and antardasha, the annual chart, and the months where transits and periods agree with each other."
+          },
+          {
+            "h": "What you leave with",
+            "body": "A month-by-month page — not predictions, but where the weight of the year sits — and one practice, sized to a life you actually lead."
+          },
+          {
+            "h": "What it is not",
+            "body": "Twelve months of daily advice. A fear you did not walk in with."
+          }
+        ]
+      },
+      {
+        "lede": "A signing, a foundation, a first journey. When to begin, and when to wait.",
+        "duration": "45 minutes, and a written window",
+        "prep": "What is being begun, and the range of dates you can move within",
+        "sections": [
+          {
+            "h": "What is read",
+            "body": "Tithi, nakshatra, yoga and karana across your range, weighed against the charts of the people who must be present."
+          },
+          {
+            "h": "What you leave with",
+            "body": "One window, occasionally two, with the hours marked. If none of your dates will do, he will say so."
+          },
+          {
+            "h": "What it is not",
+            "body": "An auspicious date for a fee. A muhurta chosen to please you."
+          }
+        ]
+      },
+      {
+        "lede": "Beyond the count of gunas: temperament, longevity, and what a household will ask of both.",
+        "duration": "120 minutes, families welcome",
+        "prep": "Birth details for both, and honesty about what has already been decided",
+        "sections": [
+          {
+            "h": "What is read",
+            "body": "Both charts separately, the navamsha for each, Mangal dosha where it is real rather than reported, and the dasha periods the two will spend their first decade inside."
+          },
+          {
+            "h": "What you leave with",
+            "body": "A clear reading of the match, including what will need work and what will not resolve. Written, so it can be read again without him in the room."
+          },
+          {
+            "h": "What it is not",
+            "body": "A number out of thirty-six. A blessing for a decision already taken."
+          }
+        ]
+      }
+    ]
+  },
+  "panchang": {
+    "eyebrow": "03 — Today, quietly",
+    "title": "The day, as the panchang has it.",
+    "note": "The panchang is read before the newspaper. It is not a forecast — only the shape of the day, kept for the sittings that fall in it.",
+    "items": [
+      {
+        "label": "Tithi",
+        "value": "Shukla Panchami",
+        "deva": "तिथि"
+      },
+      {
+        "label": "Nakshatra",
+        "value": "Rohini",
+        "deva": "नक्षत्र"
+      },
+      {
+        "label": "Yoga",
+        "value": "Siddha",
+        "deva": "योग"
+      },
+      {
+        "label": "Karana",
+        "value": "Bava",
+        "deva": "करण"
+      },
+      {
+        "label": "Vara",
+        "value": "",
+        "deva": "वार"
+      }
+    ],
+    "shukla": "Shukla",
+    "krishna": "Krishna",
+    "asAt": "Read in Jaipur at {time}",
+    "vara": "Vara"
+  },
+  "ritual": {
+    "eyebrow": "04 — How a sitting unfolds",
+    "deva": "क्रम",
+    "steps": [
+      {
+        "n": "01",
+        "label": "Arrive",
+        "line": "Tea, silence, the chart already open."
+      },
+      {
+        "n": "02",
+        "label": "Chart",
+        "line": "Forty minutes with the sky, not the story you brought."
+      },
+      {
+        "n": "03",
+        "label": "Counsel",
+        "line": "What is true, said without theatre."
+      },
+      {
+        "n": "04",
+        "label": "Remedy",
+        "line": "One practice. Not a catalogue of rituals."
+      }
+    ]
+  },
+  "reading": {
+    "eyebrow": "05 — What is read",
+    "titleLead": "Six things, and",
+    "titleAccent": "nothing",
+    "titleTail": "for effect.",
+    "note": "No gemstone shop, no yantra sales, no fear used as a fee. What cannot be known is said to be unknown.",
+    "items": [
+      {
+        "term": "Lagna",
+        "deva": "लग्न",
+        "body": "The rising degree — the body you were given and the room you walk into."
+      },
+      {
+        "term": "Chandra",
+        "deva": "चन्द्र",
+        "body": "The moon and its nakshatra — temperament, and what actually settles you."
+      },
+      {
+        "term": "Dasha",
+        "deva": "दशा",
+        "body": "Vimshottari periods — which years belong to which planet, and why."
+      },
+      {
+        "term": "Gochara",
+        "deva": "गोचर",
+        "body": "Transits over the natal chart — Saturn’s slow work, Jupiter’s brief permission."
+      },
+      {
+        "term": "Yoga",
+        "deva": "योग",
+        "body": "Combinations that repeat across a life — the ones worth naming, not the ones that sell."
+      },
+      {
+        "term": "Varga",
+        "deva": "वर्ग",
+        "body": "Divisional charts — the navamsha for marriage, the dashamsha for work."
+      }
+    ]
+  },
+  "houses": {
+    "eyebrow": "06 — The twelve houses",
+    "titleLead": "Twelve rooms,",
+    "titleAccent": "one",
+    "titleTail": "life.",
+    "note": "The chart is a house with twelve rooms. Which sign a room carries, and which planet stands in it, is most of the reading. The rest is timing.",
+    "chartCaption": "North Indian kundli — house one is the lagna",
+    "signsTitle": "The twelve rashis",
+    "signs": [
+      {
+        "name": "Aries",
+        "sub": "मेष"
+      },
+      {
+        "name": "Taurus",
+        "sub": "वृषभ"
+      },
+      {
+        "name": "Gemini",
+        "sub": "मिथुन"
+      },
+      {
+        "name": "Cancer",
+        "sub": "कर्क"
+      },
+      {
+        "name": "Leo",
+        "sub": "सिंह"
+      },
+      {
+        "name": "Virgo",
+        "sub": "कन्या"
+      },
+      {
+        "name": "Libra",
+        "sub": "तुला"
+      },
+      {
+        "name": "Scorpio",
+        "sub": "वृश्चिक"
+      },
+      {
+        "name": "Sagittarius",
+        "sub": "धनु"
+      },
+      {
+        "name": "Capricorn",
+        "sub": "मकर"
+      },
+      {
+        "name": "Aquarius",
+        "sub": "कुम्भ"
+      },
+      {
+        "name": "Pisces",
+        "sub": "मीन"
+      }
+    ],
+    "cta": "Draw your own chart →"
+  },
+  "sanctum": {
+    "eyebrow": "07 — The Sanctum, Jaipur",
+    "titleLead": "A room that does not",
+    "titleAccent": "perform.",
+    "body": "Consultations are held in person in Jaipur, or by private video when travel is impossible. The room is kept for one sitting at a time. There is no waiting lounge, no reception desk, no music.",
+    "link": "Request the address →",
+    "deva": "कक्ष",
+    "imageAlt": "An upper-storey room in an old Jaipur house: lime-washed walls, teak table, jaali light",
+    "facts": [
+      "C-Scheme, Jaipur",
+      "90 minutes, never rushed",
+      "One client. Never a group."
+    ]
+  },
+  "parampara": {
+    "eyebrow": "08 — Parampara",
+    "titleLead": "Held, not",
+    "titleAccent": "advertised.",
+    "closing": "He does not list gurus for credibility. The work is the credential.",
+    "deva": "परम्परा",
+    "imageAlt": "Margin of a nineteenth-century Jyotish manuscript, Sanskrit in black ink",
+    "years": [
+      {
+        "y": "1984",
+        "t": "Born into a household where the panchang was read before the newspaper."
+      },
+      {
+        "y": "2001",
+        "t": "First serious study of Jataka under his grandfather’s hand — no certificates, only correction."
+      },
+      {
+        "y": "2011",
+        "t": "Leaves public stages. Begins taking only private charts."
+      },
+      {
+        "y": "2019",
+        "t": "Opens the Jaipur sanctum. Twelve sittings a week, never more."
+      },
+      {
+        "y": "2026",
+        "t": "AETHERIS — the work given a name, not a brand."
+      }
+    ]
+  },
+  "forwhom": {
+    "eyebrow": "09 — For whom",
+    "line1": "This is not for everyone.",
+    "line2": "That is the point.",
+    "forTitle": "AETHERIS is for",
+    "notForTitle": "It is not for",
+    "for": [
+      "Founders and patrons who need timing, not motivation.",
+      "Families before marriage, before a name, before a crossing.",
+      "Those who have already tried spectacle and found it empty."
+    ],
+    "notFor": [
+      "Entertainment, party-fair readings, or “one question” curiosity.",
+      "Those seeking guarantees, spells, or a rewritten fate.",
+      "Public figures wanting a filmed session."
+    ],
+    "closing": "If you are unsure, write first. He will say no when he must."
+  },
+  "sitting": {
+    "eyebrow": "10 — Ninety minutes",
+    "titleLead": "What actually",
+    "titleAccent": "happens.",
+    "note": "There is no recording. Notes are written by hand and given to you. He does not sell packages, follow-up funnels, or a shop of stones.",
+    "link": "See how to prepare →",
+    "beats": [
+      {
+        "time": "00:00",
+        "caption": "Arrival",
+        "alt": "A teacup beside the edge of a handwritten chart, morning light"
+      },
+      {
+        "time": "00:12",
+        "caption": "The chart is opened",
+        "alt": "A hand at rest beside a brass compass and a red pencil"
+      },
+      {
+        "time": "00:40",
+        "caption": "What is said, stays",
+        "alt": "The empty chair opposite, window and jaali light"
+      },
+      {
+        "time": "01:20",
+        "caption": "One practice to live",
+        "alt": "A single folded page of remedies on rag paper under one black clip"
+      }
+    ]
+  },
+  "voices": {
+    "eyebrow": "11 — In confidence",
+    "titleLead": "Said",
+    "titleAccent": "quietly,",
+    "titleTail": "afterwards.",
+    "quotes": [
+      {
+        "q": "He told me the year I would lose the company — and the month I would be glad I had.",
+        "who": "Anika M.",
+        "where": "Founder, Bombay"
+      },
+      {
+        "q": "We came for a marriage chart. We left with a quieter house.",
+        "who": "Kabir & Leela S.",
+        "where": "Jaipur"
+      },
+      {
+        "q": "The only astrologer who has ever said “I do not know” — and meant it.",
+        "who": "R. Das",
+        "where": "Patron"
+      }
+    ]
+  },
+  "journal": {
+    "eyebrow": "12 — Insights",
+    "titleLead": "The",
+    "titleAccent": "Journal.",
+    "read": "6 min read",
+    "entries": [
+      {
+        "title": "On saying no to a chart",
+        "alt": "A hand turning a palm-leaf manuscript"
+      },
+      {
+        "title": "The difference between fear and a malefic",
+        "alt": "Morning light on an unlit brass diya"
+      },
+      {
+        "title": "Why he will not read a child for fame",
+        "alt": "A quiet temple corridor in sandstone and shadow"
+      }
+    ],
+    "backToJournal": "← All writing",
+    "posts": [
+      {
+        "slug": "on-saying-no-to-a-chart",
+        "title": "On saying no to a chart",
+        "dek": "Most of the work is deciding whose chart not to open.",
+        "read": "6 min read",
+        "body": [
+          "A chart arrives most weeks from someone who does not want it read. They want it agreed with. The date is already fixed, the person already chosen, the company already sold. What is wanted is a sentence they can repeat to a family.",
+          "He says no to those. Not out of principle so much as arithmetic: a reading that only confirms is a reading that cannot correct, and a practice that never corrects is entertainment with better paper.",
+          "There is a second kind he refuses. The chart of someone who has not asked. A spouse who does not know their details were sent. A candidate for a job. A child, sent by a proud parent.",
+          "And a third, harder one: the chart of a person in the middle of something the sky cannot help with — a diagnosis, a grief three weeks old. Jyotisha is timing. It is not medicine and it is not company. There are weeks where the honest reading is that a chart is the wrong room to sit in.",
+          "What is left after those three refusals is small. That is the practice."
+        ],
+        "pull": "A reading that only confirms is a reading that cannot correct."
+      },
+      {
+        "slug": "fear-and-a-malefic",
+        "title": "The difference between fear and a malefic",
+        "dek": "Saturn is not punishment. It is slowness, and slowness is a fact.",
+        "read": "6 min read",
+        "body": [
+          "The word malefic has done more damage in translation than in Sanskrit. Krura means harsh, sharp, difficult to hold — the way a winter is difficult. It does not mean a planet is against you.",
+          "Saturn over the tenth is not a sentence. It is a description of pace: things will take the time they take, corners will not cut, and the work will be checked. Read as fear, that becomes a year of dread. Read as timing, it becomes a year of building slowly and finishing.",
+          "The distinction matters because fear sells and timing does not. A practitioner who names a graha as an enemy has created a problem only he can solve, usually with a stone. A practitioner who names it as a rate of speed has given you something you can plan around.",
+          "There are hard charts. Some years genuinely cost more than they return. The reading says so plainly, and then says what is still possible inside that year — because something always is, and naming it is the actual work.",
+          "The test is simple. If a reading leaves you more afraid than when you sat down, and no more capable, it was not a reading."
+        ],
+        "pull": "Fear sells. Timing does not."
+      },
+      {
+        "slug": "reading-a-child",
+        "title": "Why he will not read a child for fame",
+        "dek": "A chart handed to a seven-year-old becomes a script they cannot put down.",
+        "read": "6 min read",
+        "body": [
+          "Parents come with a child's chart and one question: what will he become. It is asked kindly. It is still the wrong question, because the answer will be repeated to the child, and a child repeats what is said about him until it is true.",
+          "A chart shows tendency, not ceiling. Told at seven that he has a chart for the stage, a boy will discount every quiet aptitude he actually has. Told that his tenth house is weak, he will hear something about himself that was never in the chart at all.",
+          "There are two readings he will do for a child. One is timing for health, where the family has a real decision to make. The other is temperament — how this particular child settles, what will and will not calm him — spoken to the parents, in the language of care rather than fate.",
+          "Everything else waits until the person can sit in the room themselves and ask their own question. Usually that is somewhere past twenty.",
+          "The refusal disappoints people. It is also the only version of this work that a grown adult will thank you for."
+        ],
+        "pull": "A child repeats what is said about him until it is true."
+      }
+    ]
+  },
+  "close": {
+    "eyebrow": "13 — Clarity",
+    "line1": "Ready to seek",
+    "line2": "clarity?",
+    "sub": "Write with your date, time, and place of birth. If the work is right, you will be offered a time.",
+    "cta": "Book Your Consultation",
+    "prepTitle": "Before you write",
+    "prep": [
+      "Date of birth, to the day.",
+      "Time of birth, as recorded — not as remembered.",
+      "Place of birth, town and state.",
+      "One question, written plainly."
+    ],
+    "deva": "शान्तिः"
+  },
+  "footer": {
+    "place": "Jaipur",
+    "rights": "All sittings private",
+    "credits": "Photography",
+    "items": {
+      "journey": "Journey",
+      "sanctum": "Sanctum",
+      "offerings": "Offerings",
+      "journal": "Journal",
+      "kundli": "Free kundli",
+      "fees": "Fees",
+      "privacy": "Privacy",
+      "terms": "Terms",
+      "credits": "Photography"
+    }
+  },
+  "credits": {
+    "eyebrow": "Credits",
+    "title": "Photography",
+    "intro": "Every photograph here comes from Wikimedia Commons and is used under the licence named beside it. The line art — the Sri Yantra, the kundli, the twelve rashis — was drawn in SVG for this site.",
+    "colUse": "Used for",
+    "colAuthor": "Photographer",
+    "colLicence": "Licence",
+    "colSource": "Source",
+    "source": "Commons",
+    "back": "Back to the site →"
+  },
+  "faq": {
+    "eyebrow": "13 — Asked often",
+    "titleLead": "Questions he is",
+    "titleAccent": "actually",
+    "titleTail": "asked.",
+    "items": [
+      {
+        "q": "Will you tell me when I will die?",
+        "a": "No. Longevity is read in a chart, and it is not said aloud. Anyone who names you a year has told you more about their practice than about your life."
+      },
+      {
+        "q": "What does a sitting cost?",
+        "a": "The fee is quoted when a sitting is offered, and it is the same whatever the chart says. Nothing is charged for remedies, and nothing is sold in the room."
+      },
+      {
+        "q": "Do I need my exact birth time?",
+        "a": "As exact as the record allows. A quarter of an hour changes the lagna in some charts. If the time is genuinely unknown, say so — some readings can still be done, and he will tell you which."
+      },
+      {
+        "q": "Can you fix a chart?",
+        "a": "No. A remedy is a practice that changes how you meet a period, not a spell that changes the period. If someone offers to rewrite a chart, they are selling you something."
+      },
+      {
+        "q": "Is a video sitting the same?",
+        "a": "Nearly. The chart, the ninety minutes and the handwritten page are identical. Only the room is missing, and for most people that matters less than the travel."
+      },
+      {
+        "q": "Will my details stay private?",
+        "a": "Yes. Birth details and anything said in a sitting are never shared, never used as an example, and never published. There is no recording."
+      }
+    ]
+  },
+  "book": {
+    "eyebrow": "Consultation",
+    "title": "Write first.",
+    "intro": "Send your birth details and one question. If the work is right for what you are asking, you will be offered a time. If it is not, he will say so plainly — usually within three days.",
+    "fields": {
+      "name": "Your name",
+      "email": "Email",
+      "phone": "Phone (optional)",
+      "dob": "Date of birth",
+      "tob": "Time of birth",
+      "pob": "Place of birth",
+      "reading": "Which reading",
+      "question": "Your question"
+    },
+    "help": {
+      "tob": "As recorded, not as remembered. If it is unknown, leave it and say so below.",
+      "pob": "Town and state is enough.",
+      "question": "One question, written plainly. Two lines is enough."
+    },
+    "readingUnsure": "I am not sure yet",
+    "submit": "Send the request",
+    "sending": "Sending…",
+    "successTitle": "It has arrived.",
+    "successBody": "Nothing else is needed from you. You will hear back at the address you gave, usually within three days.",
+    "again": "Send another request",
+    "errors": {
+      "required": "This is needed",
+      "email": "That address does not look right",
+      "generic": "Something went wrong on our side. Write to us directly instead."
+    },
+    "privacyNote": "Your details are stored only to answer you, and are never shared."
+  },
+  "kundli": {
+    "eyebrow": "A gift, freely given",
+    "title": "Your kundli, drawn.",
+    "intro": "Enter a birth date, time and place, and this will draw the North Indian chart — lagna, the nine grahas in their houses, the birth nakshatra, and the Vimshottari dasha sequence. It is calculated here in your browser and sent nowhere.",
+    "disclaimer": "A chart is not a reading. This is a sidereal calculation (Lahiri ayanamsha) accurate to a few arc-minutes — enough to see the shape of a chart, not to time an event. What it means is a different conversation.",
+    "fields": {
+      "date": "Date of birth",
+      "time": "Time of birth",
+      "place": "Place of birth",
+      "lat": "Latitude",
+      "lon": "Longitude",
+      "tz": "Time zone"
+    },
+    "customPlace": "Somewhere else",
+    "submit": "Draw the chart",
+    "reset": "Start again",
+    "result": {
+      "lagna": "Lagna",
+      "moon": "Moon nakshatra",
+      "pada": "pada",
+      "chart": "The chart",
+      "grahas": "The nine grahas",
+      "dasha": "Vimshottari dasha",
+      "colGraha": "Graha",
+      "colRashi": "Rashi",
+      "colDegree": "Degree",
+      "colHouse": "House",
+      "colNakshatra": "Nakshatra",
+      "retro": "retrograde",
+      "current": "running now",
+      "ayanamsha": "Ayanamsha"
+    },
+    "cta": "Have it read →"
+  },
+  "legal": {
+    "updated": "Last revised August 2026",
+    "fees": {
+      "eyebrow": "Fees",
+      "title": "What it costs, and what it does not.",
+      "sections": [
+        {
+          "h": "The fee is quoted, once",
+          "body": "When a sitting is offered you are told the fee for that reading. It does not change with what the chart shows, how urgent the question is, or how much you can pay."
+        },
+        {
+          "h": "Nothing is sold in the room",
+          "body": "There are no stones, yantras, pujas, courses or subscriptions for sale here, and no commission is taken from anyone you are sent to. Where a remedy involves an object, you are told where to buy it and it is not from him."
+        },
+        {
+          "h": "Rescheduling",
+          "body": "A sitting can be moved once, with two days' notice, at no cost. A sitting missed without notice is not refunded — the room was held for you and for nobody else."
+        },
+        {
+          "h": "Refunds",
+          "body": "If he cancels, you are refunded in full. If a reading cannot be done because the birth time turns out to be unusable, the fee is returned less the time already spent."
+        }
+      ]
+    },
+    "privacy": {
+      "eyebrow": "Privacy",
+      "title": "What is kept, and for how long.",
+      "sections": [
+        {
+          "h": "What is collected",
+          "body": "Only what you type into the consultation form: your name, your contact details, your birth details, and your question. The free kundli tool sends nothing anywhere — it is calculated in your browser and forgotten when you close the page."
+        },
+        {
+          "h": "Why it is kept",
+          "body": "To answer you, and to prepare a chart if a sitting is offered. Nothing is used for marketing. There is no newsletter, no advertising pixel, and no third-party analytics on this site."
+        },
+        {
+          "h": "Who sees it",
+          "body": "The Acharya. Nobody else. Birth details and anything said in a sitting are never shared, never used as an anonymised example, and never published."
+        },
+        {
+          "h": "How long",
+          "body": "Requests that do not become sittings are deleted within ninety days. Charts of clients are kept as handwritten records so that a future sitting can build on the last one, and are destroyed on request."
+        },
+        {
+          "h": "Asking for deletion",
+          "body": "Write to the address below and your record is removed, without a reason being asked for."
+        }
+      ]
+    },
+    "terms": {
+      "eyebrow": "Terms",
+      "title": "The plain terms of the work.",
+      "sections": [
+        {
+          "h": "What this is",
+          "body": "Jyotisha — counsel based on a chart. It is offered as guidance for your own decisions, and nothing more."
+        },
+        {
+          "h": "What it is not",
+          "body": "It is not medical, legal, financial or psychiatric advice, and it does not replace any of them. No outcome is promised or guaranteed, and no reading should be used as the sole basis for a decision that affects your health, your money or another person."
+        },
+        {
+          "h": "Who it is for",
+          "body": "Adults, asking for themselves. Charts of people who have not consented are not read, and children are read only with a family present and only for the two questions described in the Journal."
+        },
+        {
+          "h": "The right to decline",
+          "body": "A request may be declined without a reason. This happens often, and it is not a judgement of you."
+        },
+        {
+          "h": "Confidentiality",
+          "body": "What is said in a sitting stays in it, in both directions. Sittings are not recorded, and you are asked not to record them either."
+        }
+      ]
+    }
+  },
+  "notFound": {
+    "eyebrow": "Not found",
+    "title": "This page is not in the house.",
+    "body": "The link may be old, or the page may never have been written. The twelve rooms of the site are all reachable from the front door.",
+    "cta": "Return to the front door →"
+  }
+}
