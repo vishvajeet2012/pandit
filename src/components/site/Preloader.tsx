@@ -15,8 +15,9 @@ import SriYantra from "./SriYantra";
 export default function Preloader() {
   const t = useTranslations("enter");
 
-  // never server-rendered (see Enter.tsx), so this can read the session directly
+  // Guard against SSR – during static prerendering `window` does not exist
   const [show, setShow] = useState(() => {
+    if (typeof window === "undefined") return false;
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (reduced || sessionStorage.getItem("aetheris-entered")) return false;
     sessionStorage.setItem("aetheris-entered", "1");
