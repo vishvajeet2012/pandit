@@ -3,36 +3,25 @@ import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import Plate, { type PlateVariant } from "@/components/plates/Plate";
-import { routing } from "@/i18n/routing";
 import { site } from "@/config/site";
+import { getPost, listPosts, type JournalPost } from "@/lib/journal-store";
 
-type Post = {
-  slug: string;
-  title: string;
-  dek: string;
-  read: string;
-  body: string[];
-  pull: string;
-};
-
-/** The three journal stills, in the order the posts are written. */
 const PLATES: PlateVariant[] = ["palm-leaf", "diya", "corridor"];
 
-export async function generateStaticParams() {
-  const params: { locale: string; slug: string }[] = [];
-  for (const locale of routing.locales) {
-    const t = await getTranslations({ locale, namespace: "journal" });
-    for (const post of t.raw("posts") as Post[]) params.push({ locale, slug: post.slug });
-  }
-  return params;
-}
+export const dynamic = "force-dynamic";
 
 async function load(locale: string, slug: string) {
   const t = await getTranslations({ locale, namespace: "journal" });
-  const posts = t.raw("posts") as Post[];
-  const index = posts.findIndex((p) => p.slug === slug);
-  if (index < 0) return null;
-  return { t, posts, index, post: posts[index] };
+  let post: JournalPost;
+  try {
+    post = await getPost(locale, slug);
+  } catch {
+    return null;
+  }
+  if (!post.published) return null;
+  const posts = (await listPosts(locale)).filter((item) => item.published);
+  const index = Math.max(0, posts.findIndex((item) => item.slug === slug));
+  return { t, posts, index, post };
 }
 
 export async function generateMetadata({
@@ -79,12 +68,16 @@ export default async function JournalPost({
       </header>
 
       <div className="mt-20">
-        <Plate
-          variant={PLATES[index] ?? "palm-leaf"}
-          alt={entries[index]?.alt ?? post.title}
-          className="h-[52vh] w-full"
-          sizes="100vw"
-        />
+        {post.coverUrl ? (
+          <img src={post.coverUrl} alt={post.title} className="h-[52vh] w-full object-cover" />
+        ) : (
+          <Plate
+            variant={PLATES[index % PLATES.length] ?? "palm-leaf"}
+            alt={entries[index]?.alt ?? post.title}
+            className="h-[52vh] w-full"
+            sizes="100vw"
+          />
+        )}
       </div>
 
       <article className="act mt-24">

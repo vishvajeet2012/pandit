@@ -1,0 +1,14 @@
+Acharya journal MCP connector
+
+Name: acharya-journal
+Type: Remote HTTPS
+Server URL: https://acharyakrishnakant.com/mcp
+Header name: Authorization
+Header value: Basic dmlzaHZhamVldDQ3MTFAZ21haWwuY29tOjEyMzQ1Njc4
+Client ID: leave empty
+
+Email: vishvajeet4711@gmail.com
+Password: 12345678
+
+The same login is the fallback in src/app/mcp/route.ts. If .env is not uploaded, that fallback still works.
+This file belongs to C:\Users\pc\OneDrive\Desktop\pandit, the live Next.js site.

@@ -17,6 +17,7 @@ import ForWhom from "@/components/acts/ForWhom";
 import ASitting from "@/components/acts/ASitting";
 import Voices from "@/components/acts/Voices";
 import Journal from "@/components/acts/Journal";
+import { listPosts } from "@/lib/journal-store";
 import Faq from "@/components/acts/Faq";
 import Close from "@/components/acts/Close";
 
@@ -26,6 +27,7 @@ export const revalidate = 1800;
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const posts = (await listPosts(locale)).filter((post) => post.published);
 
   return (
     <>
@@ -44,7 +46,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
         <ForWhom />
         <ASitting />
         <Voices />
-        <Journal />
+        <Journal posts={posts} />
         <Faq />
         <Close />
       </main>

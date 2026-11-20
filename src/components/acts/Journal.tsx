@@ -10,12 +10,11 @@ const VARIANTS: PlateVariant[] = ["palm-leaf", "diya", "corridor"];
 const SHIFT = [-10, 10, -6];
 
 type Entry = { title: string; alt: string };
-type Post = { slug: string; title: string; read: string };
+type PostCard = { slug: string; title: string; read: string; coverUrl?: string };
 
-export default function Journal() {
+export default function Journal({ posts }: { posts: PostCard[] }) {
   const t = useTranslations("journal");
   const entries = t.raw("entries") as Entry[];
-  const posts = t.raw("posts") as Post[];
   const root = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -51,22 +50,26 @@ export default function Journal() {
       </div>
 
       <div className="mt-20 grid grid-cols-1 gap-2 md:grid-cols-3">
-        {entries.map((e, i) => (
-          <Link key={e.title} href={`/journal/${posts[i].slug}`} className="group block">
-            <div className="strip-frame relative overflow-hidden" data-shift={SHIFT[i]}>
-              <Plate
-                variant={VARIANTS[i]}
-                alt={e.alt}
-                className={`aspect-[4/5] w-full transition-transform duration-[1400ms] ease-[cubic-bezier(.22,1,.36,1)] group-hover:scale-[1.03] ${
-                  i === 1 ? "scale-[1.03]" : ""
-                }`}
-              />
+        {posts.map((post, i) => (
+          <Link key={post.slug} href={`/journal/${post.slug}`} className="group block">
+            <div className="strip-frame relative overflow-hidden" data-shift={SHIFT[i % SHIFT.length]}>
+              {post.coverUrl ? (
+                <img src={post.coverUrl} alt={entries[i]?.alt ?? post.title} className="aspect-[4/5] w-full object-cover" />
+              ) : (
+                <Plate
+                  variant={VARIANTS[i % VARIANTS.length]}
+                  alt={entries[i]?.alt ?? post.title}
+                  className={`aspect-[4/5] w-full transition-transform duration-[1400ms] ease-[cubic-bezier(.22,1,.36,1)] group-hover:scale-[1.03] ${
+                    i === 1 ? "scale-[1.03]" : ""
+                  }`}
+                />
+              )}
             </div>
             <div className="mt-7 px-6">
               <h3 className="display max-w-[22ch] text-[clamp(19px,1.7vw,26px)] leading-[1.2]">
-                {e.title}
+                {post.title}
               </h3>
-              <p className="smallcaps mt-4 text-gold">{posts[i].read}</p>
+              <p className="smallcaps mt-4 text-gold">{post.read}</p>
             </div>
           </Link>
         ))}
